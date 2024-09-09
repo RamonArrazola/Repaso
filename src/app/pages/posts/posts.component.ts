@@ -14,4 +14,8 @@ export class PostsComponent implements OnInit {
   ngOnInit(){
     this.posts = this.dataService.getPosts();
   }
+
+  clickLitsen( event: number ){
+    console.log("click en " + event)
+  }
 }
