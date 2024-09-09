@@ -1,1 +1,8 @@
-<p>posts works!</p>
+<h1>Posts</h1>
+
+<ul class="list-group">
+    <li *ngFor="let posts of post | async" class="list-group-item">
+        <h2>{{posts.title}}</h2>
+        <p>{{posts.body}}</p>
+    </li>
+</ul>
